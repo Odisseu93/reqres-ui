@@ -1,0 +1,22 @@
+{
+  "extends": [
+  "next",
+   "next/core-web-vitals",
+   "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "quotes": ["error", "single"],
+    "@next/next/inline-script-id": "error",
+    "indent": ["error", "tab"],
+    "linebreak-style": ["error", "windows"],
+    "no-mixed-spaces-and-tabs":"off",
+    "comma-spacing": ["warn",{"before": false, "after": true }],
+    "semi": ["error", "always"]
+  }
+}

@@ -5,9 +5,10 @@ ReqResUI is a user interface built using Next.js, Tailwind CSS, and TypeScript. 
 
 ### Teach Stack 
 - [Next.js](https://nextjs.org/)
-- [Typesscript](https://www.typescriptlang.org/)
 - [React](https://react.dev/)
+- [Typesscript](https://www.typescriptlang.org/)
 - [Tailwind](https://tailwindcss.com/)
+- [Headless UI](https://headlessui.com/react/dialog)
 - [Font Awesome](https://fontawesome.com/)
 - [ReqRes API](https://reqres.in/)
 

@@ -17,6 +17,7 @@
     "linebreak-style": ["error", "windows"],
     "no-mixed-spaces-and-tabs":"off",
     "comma-spacing": ["warn",{"before": false, "after": true }],
-    "semi": ["error", "always"]
+    "semi": ["error", "always"],
+    "@typescript-eslint/ban-ts-comment": "off"
   }
 }

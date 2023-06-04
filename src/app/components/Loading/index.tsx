@@ -9,9 +9,10 @@ type LoadingProps = {
 	bg: string,
 	width: number | string,
 	height: number | string,
+	cls?: string
 };
 
-export default function Loading({ children, time, color: spinnerColor, bg, width, height }: LoadingProps) {
+export default function Loading({ children, time, color: spinnerColor, bg, width, height, cls }: LoadingProps) {
 	const [isLoading, setIsLoading] = useState(true);
 	const handleLoadindTime = (time: number) => {
 		setTimeout(() => setIsLoading(false), time);
@@ -21,7 +22,7 @@ export default function Loading({ children, time, color: spinnerColor, bg, width
 	function Spinner() {
 		return (
 			<div
-				className={`flex flex-col items-center justify-center bg-${bg.includes('#') ? `[${bg}]` : bg} p-10 shadow-md rounded-xl`}
+				className={`${!cls ? '' : cls} bg-${bg.includes('#') ? `[${bg}]` : bg}`}
 				style={{
 					width: `${typeof width === 'number' ? `${width}px` : width}`,
 					height: `${typeof height === 'number' ? `${height}px` : height}`

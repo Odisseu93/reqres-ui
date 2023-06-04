@@ -16,7 +16,7 @@ const UserList = async ()=> {
 					email,
 					id }) => {
 					return (
-						<Loading key={id} color='white' bg='#000f14' time={1000} width={250} height={200}>
+						<Loading key={id} color='white' cls='flex flex-col items-center mx-auto justify-center p-10 shadow-md rounded-xl' bg='#000f14' time={500} width={250} height={200} >
 							<div  className='p-2 min-w-[200px] mx-auto rounded-md text-white bg-[#000f14] shadow-xl  md:w-1/4'>
 								<h3 className='text-2xl text-center'>{first_name}</h3>
 								<p className='font-bold text-center'>{email}</p>
